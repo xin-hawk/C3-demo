@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+
+.relief{
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    color: #ddd;
+    text-shadow: 1px 1px  #fff,
+                -1px -1px  #fff;
+}
+.enchase{
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    color: #ddd;
+    text-shadow: -1px -1px  #fff,
+                 1px 1px  #f0f;
+}
+.fire{
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 700px;
+    font-size: 50px;
+    color: #0f2;
+    text-shadow: -1px -1px  #0f3,
+                1px 1px  #0f4;
+    transition: all 2s;
+}
+.fire:hover{
+    color: #f30;
+    text-shadow: 0px -1px 2px #f30,
+                 0px -10px 10px #f40,
+                 0px -4px 10px #f50;
+}
+.fire::before{
+    opacity: 0;
+    content: "NO ";
+    color: #f30;
+    text-shadow: 0px -1px 2px #f30,
+                 0px -10px 10px #f40,
+                 0px -4px 10px #f50;
+    transition: all 2s;
+}
+.fire:hover:before{
+    opacity: 1;
+    transition: all 2s;
+}
+.death{
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 150px);
+    width: 240px;
+    height: 80px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #ddd;
+    background-image: url(../image/death.jpg);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: -65px 10px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -10px -10px 3px rgba(255, 0, 255, .1),
+                 5px 5px 3px rgba(0, 255, 255, .1);
+    transition: all 2s;
+    opacity: 0.2;
+}
+.death:hover{
+    background-position: -62px -35px;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+    opacity: 1;
+}
+.shadow{
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 100px;
+    color: #ff0;
+    font-size: 30px;
+}
+.shadow:hover{
+    text-shadow: 15px 15px 5px #0ff,
+                30px 15px 5px #0f4,
+                -30px -15px 5px #f0f,
+                40px -45px 5px #ff0,
+                -50px 15px 3px #0ff;
+}

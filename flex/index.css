@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    resize: both;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer, .left, .right{
+    flex:0 0 20%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.header{
+    justify-content: flex-start;
+}
+
+.footer{
+    justify-content: flex-end;
+}
+
+.contain{
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.center{
+    flex: 1 1 auto;
+}
